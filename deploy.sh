@@ -42,6 +42,14 @@ az deployment group create \
   --parameters appServiceName=$APP_NAME location=$LOCATION \
   --output table
 
+# Deploy Application Code
+echo "Deploying application code..."
+az webapp deploy \
+  --resource-group $RESOURCE_GROUP \
+  --name $APP_NAME \
+  --src-path ./app.zip \
+  --type zip
+
 # Get the App Service URL
 APP_URL=$(az webapp show \
   --resource-group $RESOURCE_GROUP \
@@ -50,15 +58,14 @@ APP_URL=$(az webapp show \
   --output tsv)
 
 echo "=========================================="
-echo "Infrastructure deployment completed!"
+echo "Deployment completed successfully!"
 echo "=========================================="
 echo "App Service Name: $APP_NAME"
 echo "App URL: https://$APP_URL"
-echo "=========================================="
 echo ""
-echo "Next step: Deploy the application code with:"
-echo "  az webapp deploy --resource-group $RESOURCE_GROUP --name $APP_NAME --src-path ./app.zip"
-echo ""
-echo "After deployment, access the app at:"
+echo "IMPORTANT: Access the application at:"
 echo "  https://$APP_URL/Index"
+echo ""
+echo "Note: It may take a few minutes for the app to be fully available."
 echo "=========================================="
+

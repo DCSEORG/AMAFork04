@@ -1,0 +1,136 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/* Expense Management System Styles */
+.expense-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.expense-section {
+    flex: 1;
+    min-width: 300px;
+    border: 2px solid #333;
+    background-color: #f5f5f5;
+}
+
+.section-header {
+    background-color: #4a6fa5;
+    color: white;
+    padding: 10px 15px;
+    margin: 0;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.section-content {
+    padding: 20px;
+}
+
+.section-content h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #333;
+    background-color: white;
+}
+
+.form-control:disabled {
+    background-color: #e9ecef;
+}
+
+select.form-control {
+    appearance: auto;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.table th {
+    background-color: #d9d9d9;
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table td {
+    border: 1px solid #333;
+    padding: 8px;
+    background-color: white;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-primary {
+    background-color: #d9d9d9;
+    color: #333;
+    border: 2px solid #333;
+    padding: 8px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #c0c0c0;
+    color: #333;
+    border-color: #333;
+}
+
+.btn-primary:focus {
+    background-color: #c0c0c0;
+    color: #333;
+    border-color: #333;
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #333;
+}
