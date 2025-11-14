@@ -40,5 +40,8 @@ Thumbs.db
 # Publish folder (we keep app.zip but not the publish directory)
 **/publish/
 
+# Bicep compiled ARM templates (keep .bicep files, exclude compiled .json)
+infrastructure/*.json
+
 # IMPORTANT: Allow .zip files for deployment
 !*.zip
