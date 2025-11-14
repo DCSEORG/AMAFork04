@@ -1,0 +1,47 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Node modules
+node_modules/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Publish folder (we keep app.zip but not the publish directory)
+**/publish/
+
+# Bicep compiled ARM templates (keep .bicep files, exclude compiled .json)
+infrastructure/*.json
+
+# IMPORTANT: Allow .zip files for deployment
+!*.zip
